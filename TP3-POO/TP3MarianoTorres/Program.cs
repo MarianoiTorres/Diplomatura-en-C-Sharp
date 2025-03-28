@@ -1,4 +1,5 @@
-﻿
+﻿using System;
+using System.Globalization;
 using TP3MarianoTorres;
 
 Console.WriteLine("Ingrese los datos de la persona:");
@@ -9,20 +10,20 @@ decimal sueldo = Convert.ToDecimal(Console.ReadLine());
 Console.WriteLine("Sexo:");
 string sexo = Console.ReadLine();
 Console.WriteLine("Peso:");
-decimal peso = Convert.ToDecimal(Console.ReadLine());
+int peso = Convert.ToInt16(Console.ReadLine());
 Console.WriteLine("Altura:");
 decimal altura = Convert.ToDecimal(Console.ReadLine());
 
 Console.Clear();
 
-Persona unaPersona = new Persona(nombre, sueldo, sexo, peso, altura);
+Persona unaPersona = new(nombre, sueldo, sexo, peso, altura);
 
 Console.WriteLine("Nueva persona creada en el sistema:");
-Console.WriteLine($"Nombre: {unaPersona.GetNombre()}");
-Console.WriteLine($"Email: {unaPersona.GetEmail()}");
-Console.WriteLine($"Sueldo: {unaPersona.GetNombre()} ARS");
-Console.WriteLine($"Sexo: {unaPersona.GetNombre()}");
-Console.WriteLine($"Peso: {unaPersona.GetNombre()} kg(B)");
-Console.WriteLine($"Altura: {unaPersona.GetAltura() / 100} m");
+Console.WriteLine($"Nombre: {unaPersona.Nombre}");
+Console.WriteLine($"Email: {unaPersona.Email}");
+Console.WriteLine($"Sueldo: {unaPersona.Sueldo} ARS");
+Console.WriteLine($"Sexo: {unaPersona.Sexo}");
+Console.WriteLine($"Peso: {unaPersona.Peso} kg(B)");
+Console.WriteLine($"Altura: {(unaPersona.Altura).ToString(new CultureInfo("es-ES"))} m");
 
 Console.ReadLine();

@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35818.85 d17.13
+VisualStudioVersion = 17.13.35818.85
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TP3MarianoTorres", "TP3MarianoTorres\TP3MarianoTorres.csproj", "{8A2827F0-CEAA-4CF2-9835-13D9342B65E5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POO.Tests", "POO.Tests\POO.Tests.csproj", "{8648B663-D91C-4C5C-B338-03EB7AD604B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +19,16 @@ Global
 		{8A2827F0-CEAA-4CF2-9835-13D9342B65E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A2827F0-CEAA-4CF2-9835-13D9342B65E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A2827F0-CEAA-4CF2-9835-13D9342B65E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8648B663-D91C-4C5C-B338-03EB7AD604B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8648B663-D91C-4C5C-B338-03EB7AD604B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8648B663-D91C-4C5C-B338-03EB7AD604B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8648B663-D91C-4C5C-B338-03EB7AD604B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8648B663-D91C-4C5C-B338-03EB7AD604B5} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6E9952B1-D1F5-422B-A45A-B6912253AD49}
