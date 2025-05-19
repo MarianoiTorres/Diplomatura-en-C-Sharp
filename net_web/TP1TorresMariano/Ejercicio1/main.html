@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <div>
+            <h1>Mariano Torres</h1>
+        </div>
+        <div>
+            <a href="#inicio">Inicio</a>
+            <a href="#sobre-mi">Sobre Mi</a>
+            <a href="#educacion">Educacion</a>
+            <a href="#experiencia">Experiencia</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#contacto">Ccontacto</a>
+        </div>
+    </nav>
+
+    <div class="banner" id="inicio">
+        <img src="perfil.jpg" alt="imagen">
+        <div>
+            <h2>Mariano Torres</h2>
+            <h4>Full Stack Developer</h4>
+        </div>
+    </div>
+
+    <div class="container">
+        <section id="sobre-mi">
+            <h2>Sobre Mi</h2>
+            <p>Soy Mariano Torres, Técnico Universitario en Programación / Full Stack Web Developer. Mi gusto está
+                orientado al desarrollo de aplicaciones, lo que me lleva a desarrollar proyectos personales con el
+                objetivo de solventar los problemas de las personas.
+            </p>
+        </section>
+
+        <section id="educacion">
+            <h2>Educacion</h2>
+            <ul>
+                <li>
+                    <h3>Universidad Tecnológica Nacional</h3>
+                    <p>Tecnicatura Universitaria en Programación</p>
+                    <p>2022 - 2024</p>
+                </li>
+                <li>
+                    <h3>Soy Henry Bootcamp</h3>
+                    <p>Full Stack Web Developer</p>
+                    <p>2023 - 2023</p>
+                </li>
+                <li>
+                    <h3>Universidad Tecnológica Nacional</h3>
+                    <p>Diplomatura en .NET.</p>
+                    <p>2025 - en curso</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="experiencia">
+            <h2>Experiencia</h2>
+            <ul>
+                <li>
+                    <h3>Full Stack Developer</h3>
+                    <p>2024 - 2024</p>
+                    <p>Soporte a clientes / resolucion de tickets y desarrollo de aplicacion en angular conectadas a
+                        Odoo</p>
+                </li>
+                <li>
+                    <h3>Coordinador de Operaciones Técnicas</h3>
+                    <p>2025 - actualmente</p>
+                    <p>Soporte a clientes / resolucion de tickets y desarrollo de aplicacion en angular conectadas a
+                        Odoo. soporte a companeros y organizacion de tareas</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Sequelize</li>
+                <li>Python</li>
+                <li>Angular</li>
+            </ul>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Si deseas ponerte en contacto conmigo, completa el siguiente formulario:</p>
+            <form id="formulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                <button type="button" onclick="validarFormulario()">Enviar</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Mariano Torres. Todos los derechos reservados.</p>
+        <a href="#inicio">Volver al inicio</a>
+    </footer>
+
+    <script>
+        function validarFormulario() {
+            const nombre = document.getElementById("nombre").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const mensaje = document.getElementById("mensaje").value.trim();
+            if (!nombre || !email || !mensaje) {
+                alert("Por favor, completá todos los campos.");
+            }
+        }
+    </script>
+</body>
+
+</html>

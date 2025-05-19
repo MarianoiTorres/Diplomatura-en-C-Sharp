@@ -1,0 +1,123 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    nav {
+      background-color: #222;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+    }
+
+    nav h1 {
+      font-size: 24px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    .banner {
+      text-align: center;
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: left;
+      gap: 30px;
+    }
+
+    .banner img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+    }
+    
+    .banner div h2 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h2 {
+      color: #444;
+      margin-top: 30px;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      margin-top: 10px;
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    form {
+      margin-top: 20px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background-color: #222;
+      color: white;
+      padding: 10px 20px;
+      margin-top: 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: rgb(247, 247, 247);
+      color: #222;
+    }
+
+    footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #f5c542;
+      text-decoration: none;
+      margin-left: 10px;
+    }
